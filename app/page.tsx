@@ -15,7 +15,7 @@ export default function Landing() {
   const [tab, setTab] = useState<string>("career");
 
   return (
-    <div className="relative px-6 md:px-[15%] mt-24 md:mt-[200px]">
+    <div className="relative px-6 md:px-[15%] mt-24 md:mt-[200px] w-full">
       <div>
         <p className="text-[26px] md:text-[40px] font-medium w-[250px] md:w-[450px] text-blue">
           Hi, I&apos;m Camilla Moraes and I&apos;m a Software Engineer.

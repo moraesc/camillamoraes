@@ -39,7 +39,7 @@ export default function WavesContent({
           Here are some samples:
         </p>
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 gap-4 mt-8 w-[450px]">
+          <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mt-8 w-[450px]">
             <CMImage
               src="/static/images/waves1.gif"
               alt="left nav"
