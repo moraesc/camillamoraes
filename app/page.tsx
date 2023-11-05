@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import "./globals.css";
 import { useRef, useState } from "react";
 import clsx from "clsx";
@@ -11,7 +10,6 @@ import { AboutPage } from "./AboutPage";
 import { Footer } from "./Footer";
 
 export default function Landing() {
-  const router = useRouter();
   const ref = useRef(null);
 
   const [tab, setTab] = useState<string>("career");

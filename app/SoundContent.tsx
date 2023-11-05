@@ -18,7 +18,17 @@ export default function SoundContent({
       <div className="overflow-scroll pb-[100px]">
         <div className="flex gap-2 items-center mb-4 md:mb-6">
           <BackButton onClick={onBackClick} />
-          <p className="text-gray-900 text-[20px] font-medium">Sound.xyz</p>
+          <div className="flex justify-between w-full items-center pr-2">
+            <p className="text-gray-900 text-[20px] font-medium">Sound.xyz</p>
+            <a href="https://sound.xyz" target="_blank">
+              <Image
+                src="/static/images/website.png"
+                alt="website"
+                width={32}
+                height={32}
+              />
+            </a>
+          </div>
         </div>
         <p className="text-[14px] text-gray-600">
           In February 2022, I joined Sound.xyz as the company&apos;s 6th
