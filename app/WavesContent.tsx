@@ -41,26 +41,26 @@ export default function WavesContent({
         <div className="flex justify-center">
           <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mt-8 w-[450px]">
             <CMImage
-              src="/static/images/waves1.gif"
-              alt="left nav"
+              src="/static/images/waves1.GIF"
+              alt="waves"
               width={220}
               height={350}
             />
             <CMImage
-              src="/static/images/waves2.gif"
-              alt="left nav"
+              src="/static/images/waves2.GIF"
+              alt="waves"
               width={220}
               height={350}
             />
             <CMImage
-              src="/static/images/waves3.gif"
-              alt="left nav"
+              src="/static/images/waves3.GIF"
+              alt="waves"
               width={220}
               height={350}
             />
             <CMImage
-              src="/static/images/waves4.gif"
-              alt="left nav"
+              src="/static/images/waves4.GIF"
+              alt="waves"
               width={220}
               height={350}
             />
