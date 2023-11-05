@@ -10,7 +10,7 @@ import { AboutPage } from "./AboutPage";
 import { Footer } from "./Footer";
 
 export default function Landing() {
-  const ref = useRef(null);
+  const ref = useRef<null | HTMLDivElement>(null);
 
   const [tab, setTab] = useState<string>("career");
 
