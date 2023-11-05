@@ -12,9 +12,9 @@ export default function WavesContent({
   onBackClick: () => void;
 }) {
   return (
-    <div className="relative flex flex-col w-full rounded-lg rounded-lg px-4 py-4 shadow-lg">
-      <div className="max-h-[100%] overflow-scroll">
-        <div className="flex gap-2 items-center mb-8 ">
+    <div className="relative flex flex-col w-full rounded-lg rounded-lg px-4 py-4 shadow-lg h-[100vh]">
+      <div className="max-h-[100%] overflow-scroll pb-[100px]">
+        <div className="flex gap-2 items-center mb-8">
           <BackButton onClick={onBackClick} />
           <p className="text-gray-900 text-[20px] font-medium">
             Waves NFT Collection
