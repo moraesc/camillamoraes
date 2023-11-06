@@ -22,7 +22,7 @@ export const Career = () => {
           <div onClick={() => setProject("aws")}>
             <WorkItem
               company="Amazon Web Services"
-              description="Building frontend and infrastructure customer applications on AWS."
+              description="Building the frontend and infrastructure for customer apps on AWS"
               timeline="July 2019 - Feb 2022"
             />
           </div>
