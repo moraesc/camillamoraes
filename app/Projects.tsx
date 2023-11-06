@@ -34,7 +34,7 @@ export const Projects = () => {
           <div>
             <WorkItem
               company="MIM Art Gallery"
-              description="An apartment art gallery in NYC that curates art from a variety of artists."
+              description="An apartment art gallery in NYC that curates art from a variety of artists"
               timeline="COMING SOON"
             />
           </div>

@@ -5,7 +5,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="py-6 w-full bg-white flex justify-center gap-4">
+    <div className="py-4 md:py-6 w-full bg-white flex justify-center gap-4 px-4">
       <a href="https://github.com/moraesc" target="_blank">
         <Image
           src="/static/images/github.png"

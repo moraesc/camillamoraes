@@ -15,26 +15,23 @@ export default function Landing() {
   const [tab, setTab] = useState<string>("career");
 
   return (
-    <div className="relative px-6 md:px-[15%] mt-24 md:mt-[200px] w-full">
+    <div className="relative px-6 md:px-[15%] mt-32 md:mt-[260px] w-full">
       <div>
         <p className="text-[26px] md:text-[40px] font-medium w-[250px] md:w-[450px] text-blue">
-          Hi, I&apos;m Camilla Moraes and I&apos;m a Software Engineer.
+          Hi, I&apos;m Camilla Moraes
         </p>
         <div className="w-[150px] md:w-[200px] h-[1px] bg-black mt-6"></div>
         <p className="text-[18px] md:text-[20px] mt-6 w-full md:w-[600px] leading-16">
           <span className="font-medium text-black">Camilla Moraes</span>{" "}
           <span className="text-gray-500 font-light">
             -- A frontend developer focused on building beautiful interfaces
-            with seamless user experiences. Over the past few years I&apos;ve
-            specifialized in developing first class experiences for enterprise
-            companies and start ups.
+            with seamless user experiences. Over the past few years, I&apos;ve
+            worked with start ups and enterprise companies on building a wide
+            range of services.
           </span>
         </p>
-        <p className="text-[18px] md:text-[20px] mt-6 md:w-[600px] leading-16 text-gray-500 font-light">
-          Currently working at Sound.xyz.
-        </p>
         <p
-          className="text-[18px] md:text-[20px] mt-16 md:w-[600px] cursor-pointer"
+          className="text-[18px] md:text-[20px] mt-8 md:w-[600px] cursor-pointer"
           onClick={() => {
             ref.current?.scrollIntoView({ behavior: "smooth" });
           }}
@@ -101,7 +98,7 @@ export default function Landing() {
           {tab === "about" && <AboutPage />}
         </div>
       </div>
-      <div className="sticky bottom-0">
+      <div className="fixed bottom-0 right-0 left-0 w-full">
         <Footer />
       </div>
     </div>

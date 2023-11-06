@@ -12,23 +12,21 @@ export default function AIArtGalleryContent({
   onBackClick: () => void;
 }) {
   return (
-    <div className="flex flex-col w-full rounded-lg rounded-lg px-4 py-4 shadow-lg">
-      <div className="overflow-scroll">
-        <div className="flex gap-2 items-center mb-8 ">
-          <BackButton onClick={onBackClick} />
-          <div className="flex justify-between w-full items-center pr-2">
-            <p className="text-gray-900 text-[20px] font-medium">
-              AI Art Gallery
-            </p>
-            <a href="https://aigalleryart.xyz" target="_blank">
-              <Image
-                src="/static/images/website.png"
-                alt="website"
-                width={32}
-                height={32}
-              />
-            </a>
-          </div>
+    <div className="flex flex-col w-full rounded-lg rounded-lg px-4 py-4 shadow-lg pb-6 mb-12 md:pb-12 md:mb-24">
+      <div className="flex gap-2 items-center mb-8">
+        <BackButton onClick={onBackClick} />
+        <div className="flex justify-between w-full items-center pr-2">
+          <p className="text-gray-900 text-[20px] font-medium">
+            AI Art Gallery
+          </p>
+          <a href="https://aigalleryart.xyz" target="_blank">
+            <Image
+              src="/static/images/website.png"
+              alt="website"
+              width={32}
+              height={32}
+            />
+          </a>
         </div>
       </div>
       <p className="text-[14px] text-gray-600">

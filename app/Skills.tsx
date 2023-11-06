@@ -22,12 +22,14 @@ export const Skills = () => {
           <Skill title="CSS" />
           <Skill title="Typescript" />
           <Skill title="Python" />
+          <Skill title="GraphQL" />
         </div>
       </div>
       <div>
         <p className="text-[16px] md:text-[20px] mb-2">AWS</p>
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
           <Skill title="Lambda" />
+          <Skill title="DynamoDB" />
           <Skill title="S3" />
           <Skill title="CloudFormation" />
           <Skill title="Amplify" />
