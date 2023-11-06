@@ -33,7 +33,10 @@ export default function Landing() {
         <p
           className="text-[18px] md:text-[20px] mt-8 md:w-[600px] cursor-pointer"
           onClick={() => {
-            ref.current?.scrollIntoView({ behavior: "smooth" });
+            const page = ref.current;
+            if (!page) return;
+            page.style.display = "flex";
+            page.scrollIntoView({ behavior: "smooth" });
           }}
         >
           <span className="font-medium text-black shimmer">
@@ -42,7 +45,7 @@ export default function Landing() {
         </p>
       </div>
       <div
-        className="flex flex-col md:flex-row mt-[500px] h-[850px] gap-8 md:gap-24 lg:gap-[240px]"
+        className="flex flex-col md:flex-row mt-[500px] h-[850px] gap-8 md:gap-24 lg:gap-[240px] hidden"
         ref={ref}
       >
         <div className="flex flex-row md:flex-col items-start justify-between md:justify-normal md:gap-2">
