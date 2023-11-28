@@ -30,36 +30,40 @@ export default function SplineContent({
       </p>
       <p className="text-[16px] font-medium mt-8 mb-4">Animated Blob</p>
       <div className="rounded-lg shadow-lg">
-        <Spline scene="https://prod.spline.design/i0odUMk5MkgRlK7q/scene.splinecode" />
+        <video controls autoPlay loop muted width="100%" height={200}>
+          <source src="/static/images/blob.mov" type="video/mp4"></source>
+        </video>
       </div>
       <p className="text-[16px] font-medium mt-8 mb-1">Follow Effect</p>
       <div>
-        <p className="text-[12px] text-gray-500 mb-4">
-          Move your mouse across the container to see the blobs move
-        </p>
-        <div className="shadow-lg rounded-lg">
-          <Spline scene="https://prod.spline.design/SqxnLRyDp7FOsPQN/scene.splinecode" />
-        </div>
+        <video controls autoPlay loop muted width="100%" height={200}>
+          <source src="/static/images/follow.mov" type="video/mp4"></source>
+        </video>
       </div>
       <p className="text-[14px] font-medium mt-8 mb-4">Morphing Sphere</p>
       <div className="shadow-lg rounded-lg">
-        <Spline scene="https://prod.spline.design/w-1SVnx0OvWSU4bY/scene.splinecode" />
+        <video controls autoPlay loop muted width="100%" height={200}>
+          <source
+            src="/static/images/morphing-blob.mov"
+            type="video/mp4"
+          ></source>
+        </video>
       </div>
       <div>
         <p className="text-[16px] font-medium mt-8 mb-1">
           Interactive Keyboard
         </p>
-        <p className="text-[16px] text-gray-500 mb-4">
-          Press the 1, 2, 3, or 4 keys on your keyboard to use the virtual
-          keyboard
-        </p>
         <div className="shadow-lg rounded-lg">
-          <Spline scene="https://prod.spline.design/ocCKWWSigsJa8k6y/scene.splinecode" />
+          <video controls autoPlay loop muted width="100%" height={200}>
+            <source src="/static/images/keyboard.mov" type="video/mp4"></source>
+          </video>
         </div>
       </div>
       <p className="text-[16px] font-medium mt-8 mb-4">Interactive Spheres</p>
       <div className="shadow-lg rounded-lg">
-        <Spline scene="https://prod.spline.design/tlPXuUkYtzceRU5n/scene.splinecode" />
+        <video controls autoPlay loop muted width="100%" height={200}>
+          <source src="/static/images/spheres.mov" type="video/mp4"></source>
+        </video>
       </div>
     </div>
   );
