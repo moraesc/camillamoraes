@@ -17,7 +17,7 @@ export const CMImage = ({
 }) => {
   return (
     <div
-      className={clsx("border-solid border-[16px] border-gray-900 rounded-lg")}
+      className={clsx("border-solid border-[8px] border-gray-900 rounded-lg")}
       style={{ width: width }}
     >
       <Image src={src} alt={alt} width={width} height={height} />

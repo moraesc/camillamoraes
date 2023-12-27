@@ -2,7 +2,6 @@
 
 import React from "react";
 import "./globals.css";
-import Spline from "@splinetool/react-spline";
 import { BackButton } from "./components/BackButton";
 
 export default function SplineContent({
