@@ -10,7 +10,7 @@ import { AboutPage } from "../AboutPage";
 import BottomNav from "../BottomNav";
 import Image from "next/image";
 import Draggable, { DraggableCore } from "react-draggable"; // Both at the same time
-import { useSnapshot } from "valtio";
+import { useModeStore } from "../store";
 
 export default function Landing() {
   const ref = useRef<null | HTMLDivElement>(null);
@@ -19,9 +19,13 @@ export default function Landing() {
   const [darkMode, setDarkMode] = useState(false);
   const [dropped, setIsDropped] = useState(false);
 
-  // const snap = useSnapshot(state);
+  const state = useModeStore()
+
+  console.log('mode: ', state.mode)
+
 
   const toggleMode = () => {
+    state.toggleMode(state);
     setDarkMode(!darkMode);
     const element = document.body;
 
@@ -199,7 +203,7 @@ export default function Landing() {
         </div>
       </div>
       <div className="flex margin-auto absolute bottom-16 justify-center w-full">
-        <BottomNav darkMode={darkMode} />
+        <BottomNav />
       </div>
     </div>
   );
