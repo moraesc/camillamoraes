@@ -68,21 +68,40 @@ export default function Landing() {
             </label>
           </Draggable>
         </div>
-        <Draggable
+        {/* <Draggable
           defaultPosition={{ x: 0, y: 0 }}
           scale={1}
           onStart={onStart}
           onStop={onStop}
-        >
-          <div className="bg-[#dfa5a4] w-[70px] h-[70px] absolute right-[196px] top-[24px] flex items-center justify-center rounded-[90px] shadow-lg cursor-pointer active:w-[73px] active:h-[73px] active-shadow-[150px] active:bg-[#d17c7b]">
-            <Image
-              src="/static/images/diagonal_arrow.png"
-              alt="arrow"
-              width={30}
-              height={30}
-            />
+        > */}
+          <div className='flex flex-col group'>
+            <div className="group bg-[#dfa5a4] w-[70px] h-[70px] absolute right-[196px] top-[24px] flex items-center justify-center rounded-[90px] shadow-lg cursor-pointer active:w-[73px] active:h-[73px] active-shadow-[150px] active:bg-[#d17c7b]">
+              <Image
+                src="/static/images/diagonal_arrow.png"
+                alt="arrow"
+                width={30}
+                height={30}
+              />
+              <div className='bg-[#dfa5a4] bg-opacity-50 h-[250px] w-[70px] rounded-[90px] absolute top-0 invisible group-hover:visible shadow-lg'>
+                <div className='mt-[85px] flex flex-col gap-4 items-center'>
+                  <a href='https://www.linkedin.com/in/camilla-moraes-044266103/' target='_blank'>
+                    <Image src='/static/images/linkedin-icon.png' alt='linkedin' width={24} height={24} />
+                  </a>
+                  <a href='https://github.com/moraesc' target='_blank'>
+                    <Image src='/static/images/github-icon.png' alt='github' width={24} height={24} />
+                  </a>
+                  <a href='https://twitter.com/home' target='_blank'>
+                    <Image src='/static/images/x-icon.png' alt='x' width={24} height={24} />
+                  </a>
+                  <a href='mailto:cmoraes1955@gmail.com' target='_blank'>
+                    <Image src='/static/images/email-icon.png' alt='email' width={24} height={24} />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </Draggable>
+          {/* <div className='bg-gray-500 h-[200px] w-[100px] rounded-[90px]'>Yo</div> */}
+        {/* </Draggable> */}
         <Draggable
           defaultPosition={{ x: 0, y: 0 }}
           scale={1}

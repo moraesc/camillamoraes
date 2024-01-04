@@ -8,7 +8,7 @@ export default function Main() {
   const router = useRouter();
   return (
     <div className="h-[100vh] w-full bg-[#232323] flex justify-center align-center items-center">
-      <div className="flex flex-col gap-0">
+      <div className="flex flex-col leading-10">
         <span className="text-[38px] text-white font-semibold">CAMILLA</span>
         <span className="text-[40px] text-white font-semibold">MORAES</span>
         <span

@@ -27,7 +27,7 @@ export default function Career() {
             <p className="text-[#6f6f6f]">2022 - 2023</p>
           </div>
           <div
-            onClick={() => router.push("/career/sound")}
+            onClick={() => router.push("/career/aws")}
             className="flex items-center  justify-between cursor-pointer hover:bg-gray-100 px-2 py-3 rounded-md"
           >
             <div className="flex gap-2">

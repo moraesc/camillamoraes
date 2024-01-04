@@ -29,7 +29,7 @@ export default function AIArtGalleryContent({
           </a>
         </div>
       </div>
-      <p className="text-[14px] text-gray-600">
+      <p className="text-[14px] text-[#63635e]">
         In February 2023 I began creating art using a variety of AI tools, but
         found the most success with Midjourney and DALL•E. I created an
         Instagram account to share my work and after gaining to 600 followers

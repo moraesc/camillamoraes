@@ -19,7 +19,7 @@ export default function WavesContent({
           Waves NFT Collection
         </p>
       </div>
-      <p className="text-[14px] text-gray-600">
+      <p className="text-[14px] text-[#63635e]">
         Suhail Doshi launched his iconic{" "}
         <a
           href="https://tunesproject.org/"

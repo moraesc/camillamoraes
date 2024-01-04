@@ -4,39 +4,45 @@ import React from "react";
 import BottomNav from "../BottomNav";
 import { Skill } from "../Skill";
 import "../globals.css";
+import Image from "next/image";
 
 export default function About() {
   return (
     <div className="relative px-6 flex justify-center items-center h-[100vh] w-full">
       <div className="flex justify-center flex-col">
         <p className="text-[40px] md:text-[50px] font-medium shimmer cursor-default">
-          -CM-
+          ABOUT
         </p>
-        <div className="w-[140px] md:w-[200px] h-[1px] bg-[#e7cfb0] mt-4"></div>
-        <p className="text-[16px] md:text-[20px] mt-6 w-full md:w-[600px] leading-16">
-          <span className="font-light">
-            Over the past 4 years, I&apos;ve specialized in building frontends
-            using React, Typescript and NextJS and backends hosted on AWS. In
+        <p className="text-[16px] mt-6 w-full md:w-[600px] leading-16 text-[#63635e]">
+          <span>
+            Over the past 5 years, I&apos;ve specialized in building frontends
+            using React, Typescript and NextJS with backends hosted on AWS. In
             addition to web development, I&apos;ve become passionate about
             building 3D designs and animations and creating AI generated art.
           </span>
           <br></br>
-          <p className="font-light mt-6">
-            I love building products with creative designs that have a profound
-            impact on my end users and am always looking for new ways to expand
-            my engineering skills in diverse areas.
+          <p className='mt-6'>
+            I love building creative products that have a profound
+            impact on my end users.
           </p>
+          <p className="mt-6">
+            Contact me to work together!
+          </p>
+          <div className='mt-6 flex gap-4'>
+            <a href='https://www.linkedin.com/in/camilla-moraes-044266103/' target='_blank'>
+              <Image src='/static/images/linkedin-icon.png' alt='linkedin' width={24} height={24} />
+            </a>
+            <a href='https://github.com/moraesc' target='_blank'>
+              <Image src='/static/images/github-icon.png' alt='github' width={24} height={24} />
+            </a>
+            <a href='https://twitter.com/home' target='_blank'>
+              <Image src='/static/images/x-icon.png' alt='x' width={24} height={24} />
+            </a>
+            <a href='mailto:cmoraes1955@gmail.com' target='_blank'>
+              <Image src='/static/images/email-icon.png' alt='email' width={24} height={24} />
+            </a>
+          </div>
         </p>
-        <div className="scroll-left mt-12">
-          <span className="text-[72px]">
-            LET'S TALK LET'S TALK LET'S TALK LET'S TALK LET'S TALK LET'S TALK
-          </span>
-        </div>
-        {/* <p className="text-[16px] md:text-[20px] mt-8 w-full md:w-[600px] leading-16 font-medium shimmer">
-          <a href="mailto:cmoraes1955@gmail.com">
-            Email me to connect and collaborate
-          </a>
-        </p> */}
       </div>
       <div className="flex margin-auto absolute bottom-16 justify-center w-full pt-24">
         <BottomNav />

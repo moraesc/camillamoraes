@@ -35,7 +35,7 @@ export default function SoundContent({
     //       </a>
     //     </div>
     //   </div>
-    //   <p className="text-[14px] text-gray-600">
+    //   <p className="text-[14px] text-[#63635e]">
     //     In February 2022, I joined Sound.xyz as the company&apos;s 6th employee
     //     and 4th Software Engineer. I contributed to the company scaling to 20
     //     employees within a year and a half and worked on multiple projects
@@ -45,7 +45,7 @@ export default function SoundContent({
     //   <p className="text-[16px] font-medium mt-6 md:mt-8 mb-2">
     //     Left Navigation
     //   </p>
-    //   <p className="text-[14px] text-gray-600 mb-4">
+    //   <p className="text-[14px] text-[#63635e] mb-4">
     //     In collaboration with the team&apos;s Designers and Product Managers, I
     //     implemented a navigation bar to highlight the websites most important
     //     pages.
@@ -59,7 +59,7 @@ export default function SoundContent({
     //     />
     //   </div>
     //   <p className="text-[16px] font-medium mt-8 mb-2">Explore</p>
-    //   <p className="text-[14px] text-gray-600 mb-4">
+    //   <p className="text-[14px] text-[#63635e] mb-4">
     //     I built the Sound.xyz Explore pages and functionality to improve the
     //     website&ldquo;s search experience and create a seamless way to discover
     //     new artists and music.
@@ -93,7 +93,7 @@ export default function SoundContent({
     //     </div>
     //   </div>
     //   <p className="text-[16px] font-medium mt-8 mb-2">Golden Egg Animation</p>
-    //   <p className="text-[14px] text-gray-600 mb-4">
+    //   <p className="text-[14px] text-[#63635e] mb-4">
     //     Each drop of Sound.xyz had one NFT that was randomly selected as the
     //     &ldquo;Golden Egg&ldquo; NFT. Artists were able to upload unique cover
     //     art for their Golden Egg NFT. To showcase the both the regular cover art

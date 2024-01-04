@@ -19,7 +19,7 @@ export default function AWSContent({
             Amazon Web Services
           </p>
         </div>
-        <p className="text-[14px] text-gray-600">
+        <p className="text-[14px] text-[#63635e]">
           I served as a Cloud Application Architect for Amazon Web Services for
           2.5 years. I worked closely with customers such as Otsuka, Medtronic
           and Merck to build the frontend and AWS infrastructure for their
