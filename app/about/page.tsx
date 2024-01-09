@@ -2,18 +2,20 @@
 
 import React from "react";
 import BottomNav from "../BottomNav";
-import { Skill } from "../Skill";
 import "../globals.css";
 import Image from "next/image";
+import { useModeStore } from "../store";
 
 export default function About() {
+  const state = useModeStore()
+
   return (
     <div className="relative px-6 flex justify-center items-center h-[100vh] w-full">
       <div className="flex justify-center flex-col">
-        <p className="text-[40px] md:text-[50px] font-medium shimmer cursor-default">
+        <h3 className="text-[32px] md:text-[54px] font-medium shimmer cursor-default">
           ABOUT
-        </p>
-        <p className="text-[16px] mt-6 w-full md:w-[600px] leading-16 text-[#63635e]">
+        </h3>
+        <p className="text-[14px] md:text-[16px] mt-6 w-full md:w-[600px] leading-16">
           <span>
             Over the past 5 years, I&apos;ve specialized in building frontends
             using React, Typescript and NextJS with backends hosted on AWS. In

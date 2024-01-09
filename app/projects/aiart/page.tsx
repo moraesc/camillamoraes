@@ -13,9 +13,9 @@ export default function AIArtContent() {
       <div className="relative flex flex-col w-full margin-auto items-center justify-center h-[100vh]">
         <div className="py-12 bg-no-repeat bg-cover rounded-b-lg px-8">
           <div className="flex justify-between w-full">
-            <div className="flex gap-4 items-center relative right-8">
+            <div className="flex gap-2 md:gap-4 items-center relative right-[6px] md:right-8">
               <BackButton onClick={() => router.push("/projects")} />
-              <p className="text-[32px] font-semibold">AI Art Gallery</p>
+              <h3 className="text-[24px] md:text-[32px] font-semibold">AI Art Gallery</h3>
             </div>
             <div className="flex">
               <a
@@ -24,7 +24,7 @@ export default function AIArtContent() {
                 target="_blank"
               >
                 LIVE PROJECT
-                <div className="rounded-[100px] bg-white w-[24px] h-[24px] items-center flex justify-center">
+                <div className="rounded-[100px] bg-white w-[24px] h-[24px] items-center flex justify-center hidden md:flex">
                   <Image
                     src="/static/images/diagonal_arrow.png"
                     alt="arrow"
@@ -32,13 +32,21 @@ export default function AIArtContent() {
                     height={16}
                   />
                 </div>
+                <div className="rounded-[100px] bg-white w-[16px] h-[16px] items-center flex justify-center md:hidden">
+                  <Image
+                    src="/static/images/diagonal_arrow.png"
+                    alt="arrow"
+                    width={12}
+                    height={12}
+                  />
+                </div>
               </a>
             </div>
           </div>
-          <div className="mt-8 flex gap-12 justify-between w-full">
+          <div className="mt-8 flex flex-col md:flex-row gap-12 justify-between w-full">
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">In Short</p>
-              <p className="text-[14px] text-[#63635e] w-[400px]">
+              <h4 className="text-[16px] font-medium">In Short</h4>
+              <p className="text-[14px] md:w-[400px]">
               In February 2023 I began creating art using a variety of AI tools, but
               found the most success with Midjourney and DALL•E. I created an
               Instagram account to share my work and after gaining to 600 followers
@@ -48,15 +56,15 @@ export default function AIArtContent() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">Tools</p>
-              <p className="text-[14px] text-[#63635e]">React</p>
-              <p className="text-[14px] text-[#63635e]">MidJourney</p>
-              <p className="text-[14px] text-[#63635e]">DALL•E</p>
-              <p className="text-[14px] text-[#63635e]">ChatGPT</p>
+              <h4 className="text-[16px] font-medium">Tools</h4>
+              <p className="text-[14px] ">React</p>
+              <p className="text-[14px] ">MidJourney</p>
+              <p className="text-[14px] ">DALL•E</p>
+              <p className="text-[14px] ">ChatGPT</p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">Timeline</p>
-              <p className="text-[14px] text-[#63635e]">Feb 2023 - Present</p>
+              <h4 className="text-[16px] font-medium">Timeline</h4>
+              <p className="text-[14px] ">Feb 2023 - Present</p>
             </div>
           </div>
         </div>

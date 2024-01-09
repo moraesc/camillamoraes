@@ -13,18 +13,18 @@ export default function WavesContent() {
       <div className="relative flex flex-col w-full margin-auto items-center justify-center h-[100vh]">
         <div className="py-12 bg-no-repeat bg-cover rounded-b-lg px-8">
           <div className="flex justify-between w-full">
-            <div className="flex gap-4 items-center relative right-8">
+            <div className="flex gap-2 md:gap-4 items-center relative right-[6px] md:right-8">
               <BackButton onClick={() => router.push("/projects")} />
-              <p className="text-[32px] font-semibold">Waves</p>
+              <h3 className="text-[24px] md:text-[32px] font-semibold">Waves</h3>
             </div>
             <div className="flex">
               <a
                 className="rounded-[90px] bg-[#232323] px-4 items-center text-[14px] cursor-pointer flex gap-2 items-center justify-center text-white"
-                href="https://wavesproject.io"
+                href="https://wavesproject.xyz"
                 target="_blank"
               >
                 LIVE PROJECT
-                <div className="rounded-[100px] bg-white w-[24px] h-[24px] items-center flex justify-center">
+                <div className="rounded-[100px] bg-white w-[24px] h-[24px] items-center flex justify-center hidden md:flex">
                   <Image
                     src="/static/images/diagonal_arrow.png"
                     alt="arrow"
@@ -32,13 +32,21 @@ export default function WavesContent() {
                     height={16}
                   />
                 </div>
+                <div className="rounded-[100px] bg-white w-[16px] h-[16px] items-center flex justify-center md:hidden">
+                  <Image
+                    src="/static/images/diagonal_arrow.png"
+                    alt="arrow"
+                    width={12}
+                    height={12}
+                  />
+                </div>
               </a>
             </div>
           </div>
-          <div className="mt-8 flex gap-12 justify-between w-full">
+          <div className="mt-8 flex flex-col md:flex-row gap-12 justify-between w-full">
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">In Short</p>
-              <p className="text-[14px] text-[#63635e] w-[400px]">
+              <h4 className="text-[16px] font-medium">In Short</h4>
+              <p className="text-[14px] md:w-[400px]">
               Suhail Doshi launched his iconic{" "}
               <a
                 href="https://tunesproject.org/"
@@ -55,16 +63,17 @@ export default function WavesContent() {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">Tools</p>
-              <p className="text-[14px] text-[#63635e]">Python</p>
-              <p className="text-[14px] text-[#63635e]">Solidity</p>
-              <p className="text-[14px] text-[#63635e]">ERC-721</p>
-              <p className="text-[14px] text-[#63635e]">IPFS</p>
-              <p className="text-[14px] text-[#63635e]">Piñata</p>
+              <h4 className="text-[16px] font-medium">Tools</h4>
+              <p className="text-[14px] ">Python</p>
+              <p className="text-[14px] ">Solidity</p>
+              <p className="text-[14px] ">ERC-721</p>
+              <p className="text-[14px] ">IPFS</p>
+              <p className="text-[14px] ">Piñata</p>
+              <p className="text-[14px] ">Webflow</p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-[16px] font-medium">Timeline</p>
-              <p className="text-[14px] text-[#63635e]">September 2021</p>
+              <h4 className="text-[16px] font-medium">Timeline</h4>
+              <p className="text-[14px] ">September 2021</p>
             </div>
           </div>
         </div>

@@ -34,7 +34,7 @@ export const WorkItem = ({
       <p className={clsx("text-[12px] w-full")}>{description}</p>
       <p
         className={clsx(
-          "text-[12px] text-[#63635e] font-sansserif absolute bottom-4"
+          "text-[12px]  font-sansserif absolute bottom-4"
         )}
       >
         {timeline}

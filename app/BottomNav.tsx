@@ -6,10 +6,10 @@ import { useModeStore } from "./store";
 export default function BottomNav() {
   const router = useRouter();
   const state = useModeStore();
-  const isDarkMode = state.mode
+  const isDarkMode = state.mode;
 
   return (
-    <div className="p-2 w-[550px] flex justify-center border-opacity-50 rounded-[90px]">
+    <div className="p-2 w-[386px] md:w-[550px] flex justify-center border-opacity-50 rounded-[90px]">
       <div
         className={clsx(
           "w-full h-14 bg-[#232323] rounded-[92px] text-white flex gap-4 p-4 items-center justify-between",
