@@ -16,7 +16,7 @@ export default function Landing() {
 
   const [tab, setTab] = useState<string>("career");
 
-  const state = useModeStore()
+  const state: any = useModeStore()
 
   const isDarkMode = state.mode === 1
 

@@ -1,11 +1,11 @@
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { useModeStore } from "./store";
+import { ModeState, useModeStore } from "./store";
 
 export default function BottomNav() {
   const router = useRouter();
-  const state = useModeStore();
+  const state: any = useModeStore();
   const isDarkMode = state.mode;
 
   return (

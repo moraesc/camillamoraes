@@ -1,11 +1,11 @@
 import { create } from 'zustand'
 
-type ModeState = {
+export type ModeState = {
   mode: number,
   toggleMode: (state: ModeState) => void
 }
 
-export const useModeStore = create((set) => ({
+export const useModeStore  = create((set) => ({
   mode: 0,
   toggleMode: (state: ModeState) => {
     if (state.mode === 0) {
