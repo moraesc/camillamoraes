@@ -79,7 +79,7 @@ export default function Landing() {
         <p className="text-[18px] md:text-[24px] lg:text-[40px] font-medium align-center">
           <span className="flex items-center gap-4 margin-auto inline no-break whitespace">
             A frontend developer{" "}
-              <div
+              <span
                 className={clsx(
                   "spin-icon bg-[#232323] rounded-[100px] w-[24px] h-[24px] md:w-[45px] md:h-[45px] flex items-center justify-center inline cursor-pointer group hidden md:flex",
                   isDarkMode && "bg-white"
@@ -91,9 +91,9 @@ export default function Landing() {
                   width={24}
                   height={24}
                 />
-              </div>
+              </span>
             focused on building
-          </span>{" "}
+          </span>
           beautiful interfaces with seamless user experiences
         </p>
       </div>
