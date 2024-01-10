@@ -64,7 +64,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="flex margin-auto absolute bottom-16 justify-center w-full pt-24">
+      <div className="flex margin-auto absolute bottom-[10%] justify-center w-full pt-24">
         <BottomNav />
       </div>
     </div>

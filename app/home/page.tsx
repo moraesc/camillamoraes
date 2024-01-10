@@ -154,7 +154,7 @@ export default function Landing() {
           {tab === "about" && <AboutPage />}
         </div>
       </div>
-      <div className="flex margin-auto absolute bottom-16 justify-center w-full">
+      <div className="flex margin-auto absolute bottom-[10%] justify-center w-full">
         <BottomNav />
       </div>
     </div>
