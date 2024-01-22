@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import { WorkItem } from "../WorkItem";
+import React from "react";
 import BottomNav from "../BottomNav";
 import { useRouter } from "next/navigation";
 import "../globals.css";
