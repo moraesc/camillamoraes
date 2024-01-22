@@ -3,10 +3,6 @@
 import "../globals.css";
 import { useRef, useState } from "react";
 import clsx from "clsx";
-import { Career } from "../Career";
-import { Projects } from "../Projects";
-import { Skills } from "../Skills";
-import { AboutPage } from "../AboutPage";
 import BottomNav from "../BottomNav";
 import Image from "next/image";
 import { useModeStore } from "../store";
@@ -29,8 +25,8 @@ export default function Landing() {
   };
 
   return (
-    <div className="relative px-6 flex justify-center items-center h-[100vh] w-full flex-col">
-      <div className="flex flex-col justify-center md:w-[900px] text-center">
+    <div className="relative px-6 flex justify-center h-[100vh] w-full flex-col items-center">
+      <div className="flex flex-col justify-center w-full md:w-[530px]">
         {/* <div className="toggle-switch">
             <label className="switch">
               <input type="checkbox" onChange={() => toggleMode()} />
@@ -73,11 +69,12 @@ export default function Landing() {
               </div>
             </div>
           </div> */}
-          <h1 className="text-[38px] md:text-[62px] lg:text-[88px] font-medium justify-center margin-auto cursor-pointer active:text-[92px] shimmer">
-            CAMILLA MORAES
+          <h1 className="text-[38px] md:text-[62px] lg:text-[52px] font-medium justify-center margin-auto shimmer">
+            <p className='leading-[50px]'>CAMILLA <br></br>MORAES</p>
           </h1>
+          <p className="text-[14px] md:text-[22px] mt-4">Frontend Developer</p>
         <p className="text-[18px] md:text-[24px] lg:text-[40px] font-medium align-center">
-          <span className="flex items-center gap-4 margin-auto inline no-break whitespace">
+          {/* <span className="flex items-center gap-4 margin-auto inline no-break whitespace">
             A frontend developer{" "}
               <span
                 className={clsx(
@@ -93,8 +90,8 @@ export default function Landing() {
                 />
               </span>
             focused on building
-          </span>
-          beautiful interfaces with seamless user experiences
+          </span> */}
+          {/* beautiful interfaces with seamless user experiences */}
         </p>
       </div>
       <div
@@ -146,12 +143,6 @@ export default function Landing() {
           >
             About
           </button>
-        </div>
-        <div>
-          {tab === "career" && <Career />}
-          {tab === "projects" && <Projects />}
-          {tab === "skills" && <Skills />}
-          {tab === "about" && <AboutPage />}
         </div>
       </div>
       <div className="flex margin-auto absolute bottom-[10%] justify-center w-full">

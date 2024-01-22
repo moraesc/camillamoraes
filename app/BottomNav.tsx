@@ -1,12 +1,21 @@
 import clsx from "clsx";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import React from "react";
-import { ModeState, useModeStore } from "./store";
+import { useModeStore } from "./store";
 
 export default function BottomNav() {
   const router = useRouter();
+  const pathname = usePathname();
   const state: any = useModeStore();
   const isDarkMode = state.mode;
+  // const pathname = router
+
+  console.log('pathname: ', pathname)
+
+  const isHome = pathname === '/home'
+  const isCareer = pathname === '/career'
+  const isProjects = pathname === '/projects'
+  const isAbout = pathname === '/about'
 
   return (
     <div className="p-2 w-[386px] md:w-[550px] flex justify-center border-opacity-50 rounded-[90px]">
@@ -19,7 +28,7 @@ export default function BottomNav() {
         <div
           className={clsx(
             "w-full py-2 rounded-[80px] hover:bg-white hover:text-[#232323] justify-center text-[16px] cursor-pointer flex",
-            isDarkMode && "text-[#232323]"
+            isDarkMode && "text-[#232323]", isHome && 'bg-white text-[#232323]'
           )}
           onClick={() => router.push("/home")}
         >
@@ -28,7 +37,7 @@ export default function BottomNav() {
         <div
           className={clsx(
             "w-full py-2 rounded-[80px] hover:bg-white hover:text-[#232323] justify-center text-[16px] cursor-pointer flex",
-            isDarkMode && "text-[#232323]"
+            isDarkMode && "text-[#232323]", isCareer && 'bg-white text-[#232323]'
           )}
           onClick={() => router.push("/career")}
         >
@@ -37,7 +46,7 @@ export default function BottomNav() {
         <div
           className={clsx(
             "w-full py-2 rounded-[80px] hover:bg-white hover:text-[#232323] justify-center text-[16px] cursor-pointer flex",
-            isDarkMode && "text-[#232323]"
+            isDarkMode && "text-[#232323]", isProjects && 'bg-white text-[#232323]'
           )}
           onClick={() => router.push("/projects")}
         >
@@ -46,7 +55,7 @@ export default function BottomNav() {
         <div
           className={clsx(
             "w-full py-2 rounded-[80px] hover:bg-white hover:text-[#232323] justify-center text-[16px] cursor-pointer flex",
-            isDarkMode && "text-[#232323]"
+            isDarkMode && "text-[#232323]", isAbout && 'bg-white text-[#232323]'
           )}
           onClick={() => router.push("/about")}
         >
