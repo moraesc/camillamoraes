@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </p>
       </div>
-      <div className="flex margin-auto absolute bottom-[10%] justify-center w-full pt-24">
+      <div className="flex margin-auto absolute bottom-[15%] md:bottom-[10%] justify-center w-full pt-24">
         <BottomNav />
       </div>
     </div>

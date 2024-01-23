@@ -42,7 +42,7 @@ export default function Landing() {
             <p className="text-[14px] md:text-[18px] mt-4 text-[#63635e]">Web Designer</p>
           </div>
       </div>
-      <div className="flex margin-auto absolute bottom-[10%] justify-center w-full">
+      <div className="flex margin-auto absolute bottom-[15%] md:bottom-[10%] justify-center w-full">
         <BottomNav />
       </div>
     </div>
