@@ -32,7 +32,7 @@ export default function Projects() {
           >
             <div className="flex gap-2 items-baseline">
               <span className="font-medium text-[#21201c]">Waves NFT</span>
-              <span className="text-[#63635e] hidden md:flex">
+              <span className="text-[#63635e] text-[14px] hidden md:flex">
                 5000 randomly generated sound waves
               </span>
             </div>

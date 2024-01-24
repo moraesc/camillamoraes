@@ -20,7 +20,7 @@ export default function Career() {
           >
             <div className="flex gap-2 items-baseline">
               <span className="text-[#21201c] font-medium">Sound.xyz</span>
-              <span className="text-[#63635e] text-[14px] font-thin hidden md:flex">A music NFT platform</span>
+              <span className="text-[#63635e] text-[14px] hidden md:flex">A music NFT platform</span>
             </div>
             <div className="bg-[#63635e] h-[1px] relative" />
             <p className="text-[#63635e] text-[14px]">2022 - 2023</p>

@@ -30,14 +30,14 @@ export default function Landing() {
               </span> MORAES</p>
           </h1>
           <div className='leading-[10px] justify-between w-full mt-4 items-baseline hidden md:flex'>
-            <p className="text-[14px] md:text-[16px] mt-4 text-[#63635e]">Frontend Developer</p>
+            <p className="text-[14px] md:text-[16px] mt-4 text-[#63635e]">Software Engineer</p>
             <p>•</p>
             <p className="text-[14px] md:text-[16px] mt-4 text-[#63635e]">Product Manager</p>
             <p>•</p>
             <p className="text-[14px] md:text-[16px] mt-4 text-[#63635e]">Web Designer</p>
           </div>
           <div className='leading-[10px] justify-between w-full items-baseline flex flex-col md:hidden'>
-            <p className="text-[14px] md:text-[18px] mt-4 text-[#63635e]">Frontend Developer</p>
+            <p className="text-[14px] md:text-[18px] mt-4 text-[#63635e]">Software Engineer</p>
             <p className="text-[14px] md:text-[18px] mt-4 text-[#63635e]">Product Manager</p>
             <p className="text-[14px] md:text-[18px] mt-4 text-[#63635e]">Web Designer</p>
           </div>
