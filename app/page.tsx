@@ -32,7 +32,7 @@ export default function Main() {
         <motion.div className='flex flex-col absolute h-[180px] w-[180px] top-[calc(50%_-_180px/2)] left-[calc(50%_-_180px/2)] relative justify-center'>
           <div className='flex flex-col leading-10'>
             <span className="text-[38px] text-white font-semibold items-center">CAMILLA</span>
-            <span className="text-[38px] text-white font-semibold">MORAES</span>
+            <span className="text-[40px] text-white font-semibold">MORAES</span>
           </div>
         </motion.div>
       </motion.div>

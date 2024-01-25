@@ -20,7 +20,7 @@ export default function SplineContent() {
             <div className="flex">
               <a
                 className="rounded-[90px] bg-[#232323] px-4 items-center text-[14px] cursor-pointer flex gap-2 items-center justify-center text-white"
-                href="https://wavesproject.io"
+                href="https://myspline.design"
                 target="_blank"
               >
                 LIVE PROJECT
