@@ -43,21 +43,28 @@ export default function Projects() {
             className="flex gap-2 items-center w-full justify-between cursor-pointer hover:bg-gray-100 px-2 py-3 rounded-md"
           >
             <div className="flex gap-2">
-              <span className="font-medium text-[#21201c]">Spline Explorations</span>
+              <span className="font-medium text-[#21201c]">
+                Spline Explorations
+              </span>
               <span className="text-[#63635e] hidden md:flex text-[14px]">
                 3D animations created in Spline
               </span>
             </div>
             <p className="text-[#63635e] text-[14px]">Present</p>
           </div>
-          <div className="flex gap-2 items-center w-full justify-between cursor-pointer hover:bg-gray-100 px-2 py-3 rounded-md">
+          <div
+            onClick={() => router.push("/projects/framer")}
+            className="flex gap-2 items-center w-full justify-between cursor-pointer hover:bg-gray-100 px-2 py-3 rounded-md"
+          >
             <div className="flex gap-2 items-baseline">
-              <span className="font-medium text-[#21201c]">MIM Art Gallery</span>
+              <span className="font-medium text-[#21201c]">
+                Framer Experiments
+              </span>
               <span className="text-[#63635e] hidden md:flex text-[14px]">
-                NYC apartment art gallery
+                2D animations developed using Framer Motion
               </span>
             </div>
-            <p className="text-[#63635e] text-[14px]">COMING SOON</p>
+            <p className="text-[#63635e] text-[14px]">2024</p>
           </div>
         </div>
       </div>
